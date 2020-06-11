@@ -18,14 +18,14 @@ To set up parameters for the simulation, navigate to the file *config_src.py* un
 - `worker_threshold`: Concentration threshold that activates a bee from random walk to either scenting or directed walk state (default: 0.01)
 - `worker_bias_scalar`: Magnitude of the directional diffusion of pheromone released by a bee (default: 40)
 
-`python run_simulation.py` runs a simulation with the provided parameters from *config/config_src.py*
+`*python run_simulation.py*` runs a simulation with the provided parameters from *config/config_src.py*
 
 ### Output:
 In the folder *experiments*, a subfolder will be created for this particular simulation with the name format *N{num_workers}_T{worker_threshold}_wb{worker_bias_scalar}_seed{random seed}*. A *cfg* file is created in this folder to record the model parameters for this simulation. The file *bee_hist.h5* contains time-series data for the position, state, scenting direction, distance from the queen of all bees. The file *envir_hist.h5* contains the time-series data for the environmental maps of pheromone diffusion and decay created by the collective scenting of the bees.
 
 
 ## Video visualization:
-Example: `python make_movie.py -p N50_T0.01000_wb30.0_seed42 -r 5 -s 1` processes the h5 data files to visualize the simulation in a video.
+Example: `*python make_movie.py -p N50_T0.01000_wb30.0_seed42 -r 5 -s 1*` processes the h5 data files to visualize the simulation in a video.
 
 Command line parameters:
 - `p` or `path`: Path to the experiment folder in the folder *experiments* (default: `N50_T0.01000_wb30.0_seed42`)
@@ -36,7 +36,7 @@ Command line parameters:
 Inside the experiment folder (e.g. *experiments/N50_T0.01000_wb30.0_seed42*), a folder named *movie_frames* will be created to store png's of the visualization plots. When the entire dataset is visualized, a movie in the format *N{num_workers}_T{worker_threshold}_wb{worker_bias_scalar}_seed{random seed}.mp4* is created in the experiment folder. Example movie:
 
 <p align="center">
-<img src="doc/example.gif" width="300"/>
+<img src="doc/example.gif" width="400"/>
 <p>
 
 Reference:
