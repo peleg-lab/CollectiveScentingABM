@@ -2,8 +2,7 @@
 
 ## Overview:
 
-To become a coherent swarm, worker bees locate their queen by tracking her pheromones, but how can distant individuals exploit these chemical signals which decay rapidly in space and time? In our study [(Nguyen et al. 2020)](https://www.biorxiv.org/content/10.1101/2020.05.23.112540v1), we show that bees use the scenting behavior to collectively create a communication network to propagate pheromone signals. This repository provides Python code for the agent-based model (AMB) that simulates the collective communication that allows bees to localize the queen and form a swarm around her. Full simulations
-shown in the paper were run on compute clusters; default values for simulation time and arena size provided here results in a smaller and shorter example that could be run locally at a reasonable time.
+To become a coherent swarm, worker bees locate their queen by tracking her pheromones, but how can distant individuals exploit these chemical signals which decay rapidly in space and time? In our study [(Nguyen et al. 2020)](https://www.biorxiv.org/content/10.1101/2020.05.23.112540v1), we show that bees use the scenting behavior to collectively create a communication network to propagate pheromone signals. This repository provides Python code for the agent-based model (AMB) that simulates the collective communication that allows bees to localize the queen and form a swarm around her. Full simulations shown in the paper were run on compute clusters; default values for simulation time and arena size provided here results in a smaller and shorter example that could be run locally at a reasonable time.
 
 ## Main requirements (versions tested on):
 - Python 3.8.3
@@ -11,8 +10,7 @@ shown in the paper were run on compute clusters; default values for simulation t
 - H5py 2.10.0
 - Matplotlib 3.1.1
 
-The complete list of required packages provided in requirements.txt, which you can install in your environment
-with the command `pip install -r requirements.txt`. Setting up a virtual environment is recommended.
+The complete list of required packages provided in requirements.txt, which you can install in your environment with the command `pip install -r requirements.txt`. Setting up a Python virtual environment, such as [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) is recommended.
 
 ## Model usage:
 To set up parameters for the simulation, navigate to the file config_src.py under config/. Free parameters of the model discussed in the paper:
