@@ -35,7 +35,7 @@ Command line parameters:
 ### Output:
 Inside the experiment folder (e.g. *experiments/N50_T0.01000_wb30.0_seed42*), a folder named *movie_frames* will be created to store png's of the visualization plots. When the entire dataset is visualized, a movie in the format *N{num_workers}_T{worker_threshold}_wb{worker_bias_scalar}_seed{random seed}.mp4* is created in the experiment folder.
 
-![alt text](doc/example.gif)
+<img src="doc/example.gif" width="300"/>
 
 Reference:
 Nguyen DMT, Iuzzolino ML, Mankel A, Bozek K, Stephens GJ, Peleg O (2020). Flow-Mediated Collective Olfactory
