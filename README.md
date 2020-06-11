@@ -1,4 +1,4 @@
-# Agent-Based Model of Collective Communication in Honey Bees
+# Agent-Based Model of Collective Olfactory Communication in Honey Bees
 
 ## Overview:
 
@@ -10,13 +10,13 @@ To become a coherent swarm, worker bees locate their queen by tracking her phero
 - H5py 2.10.0
 - Matplotlib 3.1.1
 
-The complete list of required packages provided in *requirements.txt*, which you can install in your environment with the command `pip install -r requirements.txt`. Setting up a Python virtual environment, such as [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), is recommended.
+The complete list of required packages provided in *requirements.txt*, which you can install in your environment with the command `pip install -r requirements.txt`. Setting up a Python virtual environment, such as [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), is highly recommended.
 
 ## Model usage:
 To set up parameters for the simulation, navigate to the file *config_src.py* under *config/*. Free parameters of the model discussed in the paper:
-- num_workers: Number of worker bees in arena (default: 50)
-- worker_threshold: Concentration threshold that activates a bee from random walk to either scenting or directed walk state (default: 0.01)
-- worker_bias_scalar: Magnitude of the directional diffusion of pheromone released by a bee (default: 40)
+- `num_workers`: Number of worker bees in arena (default: 50)
+- `worker_threshold`: Concentration threshold that activates a bee from random walk to either scenting or directed walk state (default: 0.01)
+- `worker_bias_scalar`: Magnitude of the directional diffusion of pheromone released by a bee (default: 40)
 
 `python run_simulation.py` runs a simulation with the provided parameters from *config/config_src.py*
 
@@ -34,6 +34,8 @@ Command line parameters:
 
 ### Output:
 Inside the experiment folder (e.g. *experiments/N50_T0.01000_wb30.0_seed42*), a folder named *movie_frames* will be created to store png's of the visualization plots. When the entire dataset is visualized, a movie in the format *N{num_workers}_T{worker_threshold}_wb{worker_bias_scalar}_seed{random seed}.mp4* is created in the experiment folder.
+
+![alt text](doc/example.gif)
 
 Reference:
 Nguyen DMT, Iuzzolino ML, Mankel A, Bozek K, Stephens GJ, Peleg O (2020). Flow-Mediated Collective Olfactory
