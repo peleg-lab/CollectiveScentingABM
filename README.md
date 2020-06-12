@@ -1,4 +1,4 @@
-# Agent-Based Model of Collective Olfactory Communication in Honey Bees
+# Collective Olfactory Communication in Honey Bees -- Agent-Based Model 
 
 ## Overview:
 
