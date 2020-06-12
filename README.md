@@ -28,9 +28,9 @@ In the folder *experiments*, a subfolder will be created for this particular sim
 Example: `python make_movie.py -p N50_T0.01000_wb30.0_seed42 -r 5 -s 1` processes the h5 data files to visualize the simulation in a video.
 
 Command line parameters:
-- `p` or `path`: Path to the experiment folder in the folder *experiments* (default: `N50_T0.01000_wb30.0_seed42`)
-- `r` or `fps`: Frame per second for output movie (default: 5)
-- `s` or `stepsize`: Step size for plotting data for output movie (default: 1)
+- `-p` or `--path`: Path to the experiment folder in the folder *experiments* (default: `N50_T0.01000_wb30.0_seed42`)
+- `-r` or `--fps`: Frame per second for output movie (default: 5)
+- `-s` or `--stepsize`: Step size for plotting data for output movie (default: 1)
 
 ### Output:
 Inside the experiment folder (e.g. *experiments/N50_T0.01000_wb30.0_seed42*), a folder named *movie_frames* will be created to store png's of the visualization plots. When the entire dataset is visualized, a movie in the format *N{num_workers}_T{worker_threshold}_wb{worker_bias_scalar}_seed{random seed}.mp4* is created in the experiment folder. Example movie:
