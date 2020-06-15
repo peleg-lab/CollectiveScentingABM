@@ -146,8 +146,8 @@ def generate_points_with_min_distance(num_bees, shape, min_dist):
     num_x = (num_bees / num_y) + 1
 
     # Create regularly spaced points
-    x = np.linspace(0., shape[1], num_x)[1:-1]
-    y = np.linspace(0., shape[0], num_y)[1:-1]
+    x = np.linspace(0, shape[1], int(num_x))[1:-1]
+    y = np.linspace(0, shape[0], int(num_y))[1:-1]
     coords = np.stack(np.meshgrid(x, y), -1).reshape(-1,2)
 
     # Compute spacing
