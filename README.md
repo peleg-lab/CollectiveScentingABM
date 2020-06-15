@@ -26,7 +26,7 @@ In the folder *experiments*, a subfolder will be created for this particular sim
 
 
 ## Video visualization:
-Example: `python make_movie.py -p N50_T0.01000_wb30.0_seed42 -r 5 -s 1` processes the h5 data files to visualize the simulation in a video.
+Example: **`python make_movie.py -p N50_T0.01000_wb30.0_seed42 -r 5 -s 1`** processes the h5 data files to visualize the simulation in a video.
 
 Command line parameters:
 - `-p` or `--path`: Path to the experiment folder in the folder *experiments* (default: `N50_T0.01000_wb30.0_seed42`)
