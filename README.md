@@ -24,11 +24,10 @@ Default parameters are already set up. To further set up or change parameters fo
 ### Output:
 In the folder *experiments*, a subfolder will be created for this particular simulation with the name format *N{num_workers}_T{worker_threshold}_wb{worker_bias_scalar}_seed{random seed}*. A *cfg* file is created in this folder to record the model parameters for this simulation. The file *bee_hist.h5* contains time-series data for the position, state, scenting direction, distance from the queen of all bees. The file *envir_hist.h5* contains the time-series data for the environmental maps of pheromone diffusion and decay created by the collective scenting of the bees.
 
-
 ## Video visualization:
 Example: **`python make_movie.py -p N50_T0.01000_wb30.0_seed42 -r 5 -s 1`** processes the h5 data files to visualize the simulation in a video.
 
-Command line parameters:
+**Command line parameters:**
 - `-p` or `--path`: Path to the experiment folder in the folder *experiments* (default: `N50_T0.01000_wb30.0_seed42`)
 - `-r` or `--fps`: Frame per second for output movie (default: `5`)
 - `-s` or `--stepsize`: Step size for plotting data for output movie (default: `1`)
